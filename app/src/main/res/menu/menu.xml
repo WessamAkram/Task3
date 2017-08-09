@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu"
+
+        android:icon="@drawable/google"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/group"
+        android:title="new group" />
+    <item
+        android:id="@+id/broad"
+        android:title="new broadcast" />
+
+    <item
+        android:id="@+id/web"
+        android:title="Whats app web" />
+    <item
+        android:id="@+id/settings"
+        android:title="settings" />
+
+</menu>
