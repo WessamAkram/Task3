@@ -1,13 +1,13 @@
 package com.example.core.learnfragment;
 
 /**
- * Created by core on 09/08/2017.
+ * Created by core on 10/08/2017.
  */
 
-public class CallData {
+public class ChatData {
     private String name;
     private String description;
-    private String img;
+
     public String getName() {
         return name;
     }
@@ -32,5 +32,5 @@ public class CallData {
         this.img = img;
     }
 
-
+    private String img;
 }

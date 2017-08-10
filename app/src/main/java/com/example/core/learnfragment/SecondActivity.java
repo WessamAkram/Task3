@@ -51,7 +51,7 @@ public class SecondActivity extends AppCompatActivity {
     }
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
-        private final List<String> mFragmentTitleList = new ArrayList<>();
+      private final List<String> mFragmentTitleList = new ArrayList<>();
 
         public ViewPagerAdapter(FragmentManager manager) {
             super(manager);
@@ -59,12 +59,21 @@ public class SecondActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+
+//            switch (position){
+//                case 0:
+//                    return new OneFragment();
+//
+//                case 1:
+//                    return new TwoFragment();
+//                case 2:
+//                    return  new ThreeFragment();
+//            }
             return mFragmentList.get(position);
         }
-
         @Override
         public int getCount() {
-            return mFragmentList.size();
+            return 3;
         }
 
         public void addFragment(Fragment fragment, String title) {

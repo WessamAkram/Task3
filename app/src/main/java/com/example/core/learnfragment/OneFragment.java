@@ -39,7 +39,7 @@ public class OneFragment extends Fragment {
         RecyclerView recyclerView = (RecyclerView) oneFragment.findViewById(R.id.recycler1_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        
+
         CallAdapter adapter = new CallAdapter(getActivity(),createDummyData());
 
         recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -54,31 +54,26 @@ public class OneFragment extends Fragment {
         List<CallData> persons = new ArrayList<>();
 
         CallData p = new CallData();
-        p.setName("Yehia");
-        p.setDescription("Hey my name is mohamed yehia and Iam an android developer");
-        p.setImg("https://firebasestorage.googleapis.com/v0/b/ai-calendar-3ff7b.appspot.com/o/users%2FPiVKAe4Y4zXP3glujlifSmKUCUE2%2F83397?alt=media&token=479fc702-4cd1-4ffd-bfe8-28626104eb56");
+        p.setName("Amany");
+        p.setDescription("Hey my name is AMany Akram and Iam php developer");
+        p.setImg("R.drawable/chrome");
 
         CallData p2 = new CallData();
-        p2.setName("Mohamed ");
-        p2.setDescription("Hey my name is mohamed yehia and Iam an android developer");
-        p2.setImg("https://firebas21212estorage.googleapis.com/v0/b/ai-calendar-3ff7b.appspot.com/o/users%2FPiVKAe4Y4zXP3glujlifSmKUCUE2%2F83397?alt=media&token=479fc702-4cd1-4ffd-bfe8-28626104eb56");
+        p2.setName("Wessam ");
+        p2.setDescription("Hey my name is Wessam and Iam an android developer");
+        p2.setImg("R.drawable/drive");
+        persons.add(p);
+        persons.add(p2);
+        persons.add(p);
+        persons.add(p2);
+        persons.add(p);
+        persons.add(p);
+        persons.add(p2);
+        persons.add(p);
+        persons.add(p);
+        persons.add(p2);
+        persons.add(p2);
 
-        persons.add(p);
-        persons.add(p2);
-        persons.add(p);
-        persons.add(p2);
-        persons.add(p);
-        persons.add(p);
-        persons.add(p2);
-        persons.add(p);
-        persons.add(p);
-        persons.add(p);
-        persons.add(p);
-        persons.add(p);
-        persons.add(p);
-        persons.add(p);
-        persons.add(p);
-        persons.add(p);
 
 
         return persons;
